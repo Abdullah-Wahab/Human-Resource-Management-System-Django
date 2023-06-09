@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HRMS Registration</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{% static 'hrms/vendors/iconfonts/mdi/css/materialdesignicons.min.css' %} ">
+  
+  
+  <link rel="stylesheet" href="{% static 'hrms/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'hrms/css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'hrms/css/Home.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'hrms/js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'hrms/js/nicepage.js' %}" defer=""></script>
+     <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{% static 'hrms/images/favicon.png' %}" />
+</head>
+
+<body class="u-body u-overlap u-xl-mode" data-lang="en">
+<header class="u-clearfix u-header u-header" id="sec-81fb">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+            <img src="{% static 'hrms/images/logo_hrms-removebg-preview.png' %}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+            <div class="menu-collapse"
+                 style="font-size: 1.5rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-grey-90 u-text-grey-40 u-text-hover-grey-70"
+                   href="#">
+                    <svg class="u-svg-link" viewBox="0 0 24 24">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+                    </svg>
+                    <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect y="1" width="16" height="2"></rect>
+                            <rect y="7" width="16" height="2"></rect>
+                            <rect y="13" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-spacing-0 u-unstyled u-nav-1">
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-grey-90 u-text-grey-40 u-text-hover-grey-70"
+                            href="/" style="padding: 18px 32px;">Home</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-grey-90 u-text-grey-40 u-text-hover-grey-70"
+                            href="/about" style="padding: 18px 32px;">About</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-grey-90 u-text-grey-40 u-text-hover-grey-70"
+                            href="/recruitment" style="padding: 18px 35px 18px 32px;">Apply Now</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-grey-90 u-text-grey-40 u-text-hover-grey-70"
+                            href="/login" style="padding: 18px 35px 18px 32px;">Log In</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                    <div class="u-inner-container-layout u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Home</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/about">About</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/recruitment">Apply
+                                Now</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/login">Log In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper auth-page">
+      <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
+        <div class="row w-100">
+          <div class="col-lg-4 mx-auto">
+            <div class="text-center mb-2">
+              <img src=" {% static 'hrms/images/logo.png' %} " alt="">
+            </div>
+            <h2 class="text-center mb-4 text-secondary">Administrator Registration</h2>
+            <div class="auto-form-wrapper">
+              <form method ='POST' enctype='multipart/form-data'>
+                {% csrf_token %}
+                {{form.errors}}
+                <div class="form-group">
+                  <div class="input-group">
+                      {{form.username}}
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                      {{form.email}}
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="form-group">
+                  <div class="input-group">
+                      {{form.password1}}
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+                      {{form.password2}}
+                    <div class="input-group-append">
+                      <span class="input-group-text">
+                        <i class="mdi mdi-check-circle-outline"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                 <div class="form-group">
+                  <div class="input-group">
+                      {{form.thumb}}
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <button class="btn btn-success submit-btn btn-block">Register</button>
+                </div>
+                <div class="text-block text-center my-3">
+                  <span class="text-small font-weight-semibold">Already have and account ?</span>
+                  <a href="{%  url 'hrms:login'  %}" class="text-black text-small">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+</body>
+
+</html>
